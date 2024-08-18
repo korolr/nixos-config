@@ -1,11 +1,11 @@
-{ inputs, pkgs, ... }: 
-let 
-  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {}; 
+{ inputs, pkgs, ... }:
+let
+  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {};
 in
 {
   home.packages = (with pkgs; [
     _2048
-    
+
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     cbonsai                           # terminal screensaver
@@ -13,7 +13,7 @@ in
     eza                               # ls replacement
     entr                              # perform action when file change
     fd                                # find replacement
-    file                              # Show file information 
+    file                              # Show file information
     fzf                               # fuzzy finder
     gtt                               # google translate TUI
     gifsicle                          # gif utility
@@ -39,6 +39,9 @@ in
     zenity
     winetricks
     wineWowPackages.wayland
+
+    firefox
+    telegram-desktop
 
     # C / C++
     gcc
