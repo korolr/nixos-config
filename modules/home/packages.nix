@@ -40,6 +40,7 @@ in
     winetricks
     wineWowPackages.wayland
 
+    wdisplays
     firefox
     telegram-desktop
 
