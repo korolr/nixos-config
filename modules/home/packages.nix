@@ -1,11 +1,6 @@
 { inputs, pkgs, ... }:
-let
-  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {};
-in
 {
   home.packages = (with pkgs; [
-    _2048
-
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     cbonsai                           # terminal screensaver
@@ -15,25 +10,19 @@ in
     fd                                # find replacement
     file                              # Show file information
     fzf                               # fuzzy finder
-    gtt                               # google translate TUI
     gifsicle                          # gif utility
-    gimp
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
     jdk17                             # java
     lazygit
     libreoffice
-    nautilus     # file manager
+    nautilus                          # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
     pipes                             # terminal screensaver
-    prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
-    soundwireserver                   # pass audio to android phone
     tdf                               # cli pdf viewer
     todo                              # cli todo list
-    toipe                             # typing test in the terminal
-    valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     yt-dlp-light
     zenity

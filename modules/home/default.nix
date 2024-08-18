@@ -1,12 +1,10 @@
 {inputs, username, host, ...}: {
   imports =
-       [(import ./aseprite/aseprite.nix)]         # pixel art editor
-    ++ [(import ./audacious/audacious.nix)]       # music player
+       [(import ./audacious/audacious.nix)]       # music player
     ++ [(import ./bat.nix)]                       # better cat command
     ++ [(import ./btop.nix)]                      # resouces monitor 
     ++ [(import ./cava.nix)]                      # audio visualizer
     ++ [(import ./discord.nix)]                   # discord with catppuccin theme
-    ++ [(import ./floorp/floorp.nix)]             # firefox based browser
     ++ [(import ./fuzzel.nix)]                    # launcher
     ++ [(import ./gaming.nix)]                    # packages related to gaming
     ++ [(import ./git.nix)]                       # version control
