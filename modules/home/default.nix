@@ -22,5 +22,6 @@
     ++ [(import ./swaylock.nix)]                  # lock screen
     ++ [(import ./vscodium.nix)]                  # vscode forck
     ++ [(import ./waybar)]                        # status bar
+    ++ [(import ./kanshi.nix)]
     ++ [(import ./zsh.nix)];                      # shell
 }
