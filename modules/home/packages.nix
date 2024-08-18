@@ -29,6 +29,10 @@
     winetricks
     wineWowPackages.wayland
 
+    brave
+    zed-editor
+    sublime-merge
+    
     wdisplays
     firefox
     telegram-desktop
